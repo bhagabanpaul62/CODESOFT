@@ -16,6 +16,7 @@
 
 html {
     font-size: 80%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -23,6 +24,7 @@ body {
     height: 100%;
     width: 100%;
 }
+
 
 #nav1 {
     background-color: var(--nav-color);
@@ -36,10 +38,9 @@ body {
     font-size: 3rem;
     box-shadow: 4px 5px 12px rgb(95, 95, 95);
     position: sticky;
-
-
+    top: 10px; 
+    z-index: 99;
     transition: transform 0.3s ease, background-color 0.3s ease;
-
 }
 
 #nav1:hover {
@@ -59,8 +60,14 @@ body {
     cursor: pointer;
 
 }
+#nav1 li a{
+    text-decoration: none;
+    color: aliceblue;
+    
+    
+}
 
-#nav1 li:hover {
+#nav1 li a:hover {
     color: var(--element_color);
 }
 
@@ -90,7 +97,7 @@ body {
 
     display: flex;
     flex-direction: column;
-
+    
     align-items: center;
     border-radius: 30px;
     box-shadow: 4px 5px 12px rgb(95, 95, 95);
@@ -167,6 +174,7 @@ body {
     flex-direction: column;
     justify-content: center;
     margin-left: 4%;
+    
 }
 
 #left_bot {
@@ -183,6 +191,7 @@ body {
     font-size: 3rem;
     font-weight: bolder;
     color: var(--bold-font-color);
+    font-family: "Rubik", system-ui;
 }
 
 #right p {
@@ -212,4 +221,86 @@ body {
 
 #icon img:hover {
     transform: scale(1.2);
+}
+
+#part2{
+    
+    margin-left: 7%;
+    margin-right: 7%;
+    
+    min-height: 100vh;
+    
+    border: 2px solid rgba(255, 0, 0, 0);
+    margin-bottom: 20%;
+}
+#main_p2{
+    box-shadow: 4px 5px 12px rgb(95, 95, 95);
+    border-radius: 20px;
+    background-color: var(--element_color);
+    min-height: inherit;
+    
+    display: flex;
+    justify-content: space-around;
+    
+} 
+
+.card{
+    position: relative;
+    width: 400px;
+    height: 350px;
+    border-radius:10px ;
+    box-shadow: 4px 5px 12px rgb(95, 95, 95);
+    transition: 0.3s;
+    background-color: aliceblue;
+    padding: 30px 50px;
+    /* margin-left: 5%; */
+    transform: translateY(12%);
+    cursor: pointer;
+}
+.card:hover{
+    height: 500px;
+}
+.imagbox{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-60px);
+    
+}
+.imagbox img{
+    width: 100%;
+    border-radius: 10px;
+}
+.contant{
+    text-align: center;
+    padding: 10px 20px;
+    transform: translateY(-400px);
+    opacity:0 ;
+
+    transition: 0.3s;
+
+}
+.contant h1{
+    font-size: 4rem;
+    color: rgb(146, 194, 237);
+    font-family: "Rubik", system-ui;
+}
+.contant a{
+    text-decoration: none;
+}
+#part2 > h1:first-of-type {
+    text-align: center;
+    /* transform: translateY(60px); */
+    font-size: 5rem;
+    color: rgb(146, 194, 237);
+    font-family: "Rubik", system-ui;
+    margin-top: 6%;
+
+    
+}
+.card:hover > .contant{
+    height: 450px;
+    opacity: 1;
+    transform: translateY(-190px);
+
 }
