@@ -1,0 +1,215 @@
+:root {
+    --main-color: #FFFBF4;
+    --nav-color: #e2787b;
+    ;
+    --element_color: #FFF9D9;
+    --button_color: #F7A81B;
+    --bold-font-color: #FF7D7D;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 80%;
+}
+
+body {
+    background-color: var(--main-color);
+    height: 100%;
+    width: 100%;
+}
+
+#nav1 {
+    background-color: var(--nav-color);
+    min-height: 7vh;
+    width: 65vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border-radius: 80px;
+    color: white;
+    font-size: 3rem;
+    box-shadow: 4px 5px 12px rgb(95, 95, 95);
+    position: sticky;
+
+
+    transition: transform 0.3s ease, background-color 0.3s ease;
+
+}
+
+#nav1:hover {
+    transform: scale(1.1);
+    background-color: #9fb042;
+}
+
+#nav1 ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#nav1 li {
+    list-style: none;
+    font-weight: 900;
+    cursor: pointer;
+
+}
+
+#nav1 li:hover {
+    color: var(--element_color);
+}
+
+#part1 {
+    display: flex;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-left: 7%;
+    margin-right: 7%;
+    min-height: 80vh;
+    ;
+}
+
+
+#left {
+
+
+    width: 30vw;
+}
+
+#ele {
+    background-color: var(--element_color);
+    width: 370px;
+    height: 600px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: 4px 5px 12px rgb(95, 95, 95);
+
+}
+
+
+
+#ele img {
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+#ele img:hover {
+    transform: scale(1.1);
+}
+
+#ele h1 {
+    font-size: 4rem;
+}
+
+#ele h3 {
+    font-size: 2rem;
+    font-weight: bolder;
+    color: rgba(0, 0, 0, 0.708);
+    margin-top: 20px;
+}
+
+#ele #email {
+    background-color: var(--nav-color);
+    height: 40px;
+    width: 110px;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--element_color);
+    margin-top: 57px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#ele #email:hover {
+    transform: scale(1.2);
+    background-color: gray;
+}
+
+
+#ele #dow_cv {
+    background-color: var(--button_color);
+    height: 45px;
+    width: 160px;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-size: 1.6rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: var(--element_color);
+    margin-top: 10px;
+
+    transition: transform 0.3s ease, background-color 0.3s ease;
+
+}
+
+#ele #dow_cv:hover {
+    transform: scale(1.2);
+    background-color: var(--bold-font-color);
+    color: aliceblue;
+
+}
+
+#right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 4%;
+}
+
+#left_bot {
+    margin-left: 3%;
+    margin-top: 2%;
+    gap: 19px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+#right h1 {
+    font-size: 3rem;
+    font-weight: bolder;
+    color: var(--bold-font-color);
+}
+
+#right p {
+    font-size: 1.5rem;
+    margin-left: 1.5%;
+}
+
+#git {
+    width: 55px;
+    border-radius: 16px;
+    margin-left: 7px;
+    box-shadow: 0px 0px 7px rgb(95, 95, 95);
+
+
+}
+
+#icon {
+    display: flex;
+    align-items: center;
+
+
+}
+
+#icon img:hover {
+    transition: transform 0.3s ease-in-out;
+}
+
+#icon img:hover {
+    transform: scale(1.2);
+}
